@@ -1,0 +1,33 @@
+{
+  "name": "seat-booking",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.17.9",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mui/icons-material": "^5.10.6",
+    "@mui/lab": "^5.0.0-alpha.102",
+    "@mui/material": "^5.10.8",
+    "@reduxjs/toolkit": "^1.8.6",
+    "js-cookie": "^3.0.1",
+    "meteor-node-stubs": "^1.2.1",
+    "nanoid": "^4.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^8.0.4",
+    "react-toastify": "^9.0.8"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.jsx",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  }
+}
