@@ -23,7 +23,7 @@ export const App = () => {
      
       return {loading:false}
     }
-  });
+  },[]);
   useEffect(()=>{
     //dispatch(getBookings())
     if(seats.length===0) {
